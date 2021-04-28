@@ -17,6 +17,7 @@ section.banner .chamadaBanner{
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
 }
 
 section.banner .chamadaBanner h2{
