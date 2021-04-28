@@ -1,0 +1,53 @@
+section.banner{
+  width: 100%;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  margin-top: -1px;
+  position: relative;
+}
+
+section.banner .chamadaBanner{
+  position: absolute;
+  left: 50%;
+  top:50%;
+  transform: translate(-50%, -50%);
+}
+
+section.banner .chamadaBanner h2{
+  color: white;
+  font-weight: normal;
+  font-size: 32px;
+  width: 356px;
+  height: 76px;
+}
+
+section.banner .chamadaBanner h2 > span:nth-of-type(1){
+  color: #FFB1A3;
+}
+
+section.banner .chamadaBanner h2 > span:nth-of-type(2){
+  color: #50CDC2;
+}
+
+section.banner .chamadaBanner .buttonChamada{
+  width: 300px;
+  height: 54px;
+  line-height: 54px;
+  font-size: 20px;
+  color: white;
+  border: 0;
+  background: linear-gradient(87.67deg, #FFB1A3 13.23%, #A2C0B3 67.3%, #50CDC2 88.99%);
+  box-shadow: 0px 0px 30px rgba(80, 205, 194, 0.75);
+  border-radius: 5px;
+  margin-top: 42px;
+  cursor: pointer;
+  transition: .9s;
+}
+
+section.banner .chamadaBanner .buttonChamada:hover{
+  filter: brightness(75%);
+  background: linear-gradient(87.67deg, #50CDC2 13.23%, #A2C0B3 39.32%, #FFB1A3 88.99%);
+}
