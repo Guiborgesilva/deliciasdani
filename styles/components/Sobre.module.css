@@ -47,3 +47,33 @@ section.sobre{
 .sobreCTA:hover{
   filter: brightness(90%);
 }
+
+/*SOBRE MODAL*/
+
+.modalWrapper{
+  width: 100%;
+  padding: 0 2%;
+  margin: 0 auto;
+}
+
+.modalWrapper h2{
+  margin-bottom: 5px;
+}
+
+.btnFechar{
+  margin-top: 10px;
+  width: 100px;
+  height: 2rem;
+  font-size: 1rem;
+  border: 0;
+  border-radius: 5px;
+  background: #50CDC2;
+  cursor: pointer;
+  transition: 0.3s;
+  text-transform: uppercase;
+  color: white;
+}
+
+.btnFechar:hover{
+  filter: brightness(90%)
+}
