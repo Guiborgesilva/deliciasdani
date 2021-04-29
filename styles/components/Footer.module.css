@@ -4,7 +4,7 @@
 }
 
 .footer{
-  padding: 60px 0;
+  padding: 60px 2%;
   background: url(../../public/footer.svg) no-repeat;
   margin-top: -50px;
   width: 100%;
@@ -61,4 +61,45 @@
   width: 2rem;
   height: 2rem;
   margin-right: 15px;
+}
+
+@media screen and (max-width: 768px){
+  .footer{
+    background-position: center;
+  }
+
+  .footerWrapper{
+    width: 100%;
+    margin-top: -15px;
+    flex-direction: column;
+  }
+
+  .footerContentLeft p{
+    margin-bottom: 5px;
+    text-align: center;
+  }
+
+  .footerContentCenter h2{
+    font-size: 2rem;
+  }
+
+  .footerContentRight{
+    margin-top: 100px;
+  }
+
+  .footerContentRight p{
+    text-align: center;
+    margin-bottom: 0;
+  }
+
+  .footerContentRight img{
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-right: 5px;
+    margin-top: 3px;
+  }
+
+  .footerContentCenter{
+    margin-top: -20px;
+  }
 }

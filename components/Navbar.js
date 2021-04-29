@@ -36,6 +36,33 @@ export default function Navbar(){
             </li>
           </ul>
         </nav>
+        <nav className={styles.mobile}>
+          <div className={styles.closeMenu}>
+            <button>X</button>
+          </div>
+          <ul>
+            <li>
+              <Link href="/">
+                <a>HOME</a>
+              </Link>
+            </li>
+            <li>
+              <Link href="/">
+                <a>SOBRE</a>
+              </Link>
+            </li>
+            <li>
+              <Link href="/produtos">
+                <a>PRODUTOS</a>
+              </Link>
+            </li>
+            <li>
+              <Link href="/">
+                <a>CONTATO</a>
+              </Link>
+            </li>
+          </ul>
+        </nav>
       </div>
       <div className={styles.line}></div>
     </header>
