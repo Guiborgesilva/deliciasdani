@@ -18,23 +18,17 @@ export default function Sobre(){
             onClick={() => setModalIsOpen(true)}>
             SAIBA MAIS
           </button>
-          <button
-            className={styles.sobreCTAResp}
-            onClick={() => setModalIsOpen(true)}>
-            SAIBA MAIS
-          </button>
           <Modal
             isOpen={modalIsOpen}
             onRequestClose={() => setModalIsOpen(false)}
-            id={styles.modalDesktop}            
             style={
               {
                 overlay:{
                   backgroundColor: 'rgba(0, 0, 0, 0.6)'
                 },
                 content:{
-                  width: '500px',
-                  height: '520px',
+                  width: '400px',
+                  height: '560px',
                   top: '50%',
                   left: '50%',
                   transform: 'translate(-50%, -50%)'
@@ -50,46 +44,6 @@ export default function Sobre(){
                 Laborum eu esse ex irure est sunt voluptate eiusmod exercitation. Officia fugiat duis eu laborum officia do mollit consequat amet voluptate. Lorem culpa excepteur ullamco consectetur ad. Sunt magna qui anim est aute qui incididunt.
 
                 Occaecat voluptate minim proident irure magna excepteur dolore dolore cillum labore est. Sint pariatur qui aliqua nulla mollit elit esse dolore enim. Qui cupidatat irure voluptate reprehenderit fugiat est esse aute sint. Veniam laboris nulla amet qui Lorem ullamco cupidatat ex incididunt eu exercitation exercitation.
-
-                Aliquip reprehenderit reprehenderit tempor magna commodo culpa culpa fugiat aliqua culpa velit aute. Officia irure quis esse minim veniam anim dolore aliqua pariatur in. Minim sit duis deserunt nostrud occaecat labore exercitation pariatur.
-              </p>
-              <button
-                onClick={() => setModalIsOpen(false)}
-                className={styles.btnFechar}
-              >
-                Fechar
-              </button>
-            </div>
-          </Modal>
-          <Modal
-            isOpen={modalIsOpen}
-            onRequestClose={() => setModalIsOpen(false)}
-            id={styles.modalMobile}
-            style={
-              {
-                overlay:{
-                  backgroundColor: 'rgba(0, 0, 0, 0.6)'
-                },
-                content:{
-                  width: '500px',
-                  height: '520px',
-                  top: '50%',
-                  left: '50%',
-                  transform: 'translate(-50%, -50%)'
-                }
-              }
-            }
-          >
-            <div className={styles.modalWrapper}>
-              <h2>Sobre a Dani</h2>
-              <p>
-                In aute exercitation quis et dolore in pariatur non ad officia. Eiusmod esse pariatur duis duis enim in ut. Cillum mollit consectetur pariatur in. Mollit labore veniam est pariatur laborum cupidatat eu ea ea fugiat quis. Qui magna deserunt mollit in exercitation labore labore qui elit qui cillum id. Enim cillum reprehenderit mollit non laboris dolore consequat eu deserunt incididunt consectetur id amet. Cupidatat Lorem ipsum non reprehenderit non tempor minim aute consectetur ut esse nulla.
-
-                Laborum eu esse ex irure est sunt voluptate eiusmod exercitation. Officia fugiat duis eu laborum officia do mollit consequat amet voluptate. Lorem culpa excepteur ullamco consectetur ad. Sunt magna qui anim est aute qui incididunt.
-
-                Occaecat voluptate minim proident irure magna excepteur dolore dolore cillum labore est. Sint pariatur qui aliqua nulla mollit elit esse dolore enim. Qui cupidatat irure voluptate reprehenderit fugiat est esse aute sint. Veniam laboris nulla amet qui Lorem ullamco cupidatat ex incididunt eu exercitation exercitation.
-
-                Aliquip reprehenderit reprehenderit tempor magna commodo culpa culpa fugiat aliqua culpa velit aute. Officia irure quis esse minim veniam anim dolore aliqua pariatur in. Minim sit duis deserunt nostrud occaecat labore exercitation pariatur.
               </p>
               <button
                 onClick={() => setModalIsOpen(false)}

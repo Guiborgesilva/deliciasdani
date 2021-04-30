@@ -30,8 +30,7 @@ section.sobre{
   width: 750px;
 }
 
-.sobreCTA,
-.sobreCTAResp{
+.sobreCTA{
   width: 168px;
   height: 45px;
   line-height: 45px;
@@ -45,20 +44,11 @@ section.sobre{
   margin-top: 44px;
 }
 
-.sobreCTAResp{
-  display: none;
-}
-
-.sobreCTA:hover,
-.sobreCTAResp:hover{
+.sobreCTA:hover{
   filter: brightness(90%);
 }
 
 /*SOBRE MODAL*/
-
-#modalMobile{
-  display: none;
-}
 
 .modalWrapper{
   width: 100%;
@@ -86,6 +76,16 @@ section.sobre{
 
 .btnFechar:hover{
   filter: brightness(90%)
+}
+
+@media screen and (max-width: 1024px){
+  .sobreContent p{
+    width: 500px;
+  }
+
+  .sobreWrapper{
+    justify-content: space-around;
+  }
 }
 
 @media screen and (max-width: 768px){
@@ -122,14 +122,5 @@ section.sobre{
 
   .sobreCTA{
     margin-top: 22px;
-  }
-
-  #modalDesktop{
-    display: none;
-  }
-
-  #modalMobile{
-    display: none;
-  }
-  
+  }  
 }

@@ -63,6 +63,16 @@
   margin-right: 15px;
 }
 
+@media screen and (max-width: 1024px){
+  .footerWrapper{
+    justify-content: space-around;
+  }
+
+  .footerContentCenter h2{
+    left: 57%;
+  }
+}
+
 @media screen and (max-width: 768px){
   .footer{
     background-position: center;
