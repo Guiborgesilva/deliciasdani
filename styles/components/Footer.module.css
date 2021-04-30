@@ -113,4 +113,8 @@
   .footerContentCenter{
     margin-top: -20px;
   }
+
+  .footerContentCenter h2{
+    left: 50%;
+  }
 }
