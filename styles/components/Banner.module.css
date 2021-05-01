@@ -6,8 +6,15 @@ section.banner{
   justify-content: center;
   overflow: hidden;
   margin-top: -1px;
-  background: url('../../public/bgBanner.png') no-repeat;
-  background-position: center;
+  position: relative
+}
+
+section.banner img{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -999;
 }
 
 section.banner .chamadaBanner{
