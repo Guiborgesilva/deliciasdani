@@ -1,7 +1,7 @@
 section.chamadaProd{
   width: 100%;
   height: 150px;
-  background: url(../../public/bg-pages.png) no-repeat;
+  background: url('../../public/bgPages.png') no-repeat;
   background-position: center;
   margin-top: -1px;
   display: flex;
