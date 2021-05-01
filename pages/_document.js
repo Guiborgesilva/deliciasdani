@@ -12,6 +12,7 @@ export default class MyDocument extends Document{
           <link rel="favicon" href="icon.png" />
           <link rel="preconnect" href="https://fonts.gstatic.com" />
           <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
+          <link rel="preload" href="../public/fonts/goodvibrations-script.ttf" as="font" />
         </Head>
         <body>
           <Main />
