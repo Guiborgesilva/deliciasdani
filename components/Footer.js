@@ -10,7 +10,7 @@ export default function Footer(){
           <p>Criciúma - SC, R. Cecílio Zakrzeski, Nº 334</p>
         </div>
         <div className={styles.footerContentCenter}>
-          <h2>Delícias da Dani</h2>
+          <img src="logo-texto.png" />
         </div>
         <div className={styles.footerContentRight}>
           <p>Faça um orçamento!</p>

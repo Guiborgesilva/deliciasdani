@@ -1,18 +1,27 @@
 section.sobre{
-  background: url('../../public/bgSobre.svg') no-repeat;
   width: 100%;
   height: 447px;
-  padding: 30px 0;
-  z-index: 5;
+  padding: 30px 2%;
+  position: relative;
+  overflow: hidden;
+}
+
+section.sobre > img{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
 }
 
 .sobreWrapper{
   max-width: 1170px;
   margin: 0 auto;
-  margin-top: 90px;
+  margin-top: 70px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  z-index: 0;
 }
 
 .sobreContent{
@@ -24,11 +33,13 @@ section.sobre{
 .sobreContent h2{
   text-align: center;
   font-weight: normal;
+  z-index: 0;
 }
 
 .sobreContent p{
   margin-top: 50px;
   width: 750px;
+  z-index: 0;
 }
 
 .sobreCTA{
@@ -53,7 +64,7 @@ section.sobre{
 
 .modalWrapper{
   width: 100%;
-  padding: 0 2%;
+  padding: 0 2.5%;
   margin: 0 auto;
 }
 
@@ -79,6 +90,17 @@ section.sobre{
   filter: brightness(90%)
 }
 
+@media screen and (max-width: 1920px){
+  .sobreWrapper{
+    margin-top: 90px;
+  }
+
+  .modalWrapper{
+    margin-top: 0;
+    padding: 0;
+  }
+}
+
 @media screen and (max-width: 1024px){
   .sobreContent p{
     width: 500px;
@@ -92,7 +114,7 @@ section.sobre{
 @media screen and (max-width: 768px){
   section.sobre{
     padding: 0;
-    margin-top: -120px;
+    margin-top: 0;
     height: 465px;
   }
 
@@ -123,11 +145,25 @@ section.sobre{
 
   .sobreCTA{
     margin-top: 22px;
-  }  
+  }
+
+  .modalWrapper{
+    margin-top: 10px;
+  }
 }
 
 @media screen and (max-width: 429px){
   .sobreContent p{
     width: 95%;
+  }
+
+  .sobreContent{
+    margin-top: 125px;
+  }
+}
+
+@media screen and (max-width: 365px){
+  .sobreContent{
+    margin-top: 115px;
   }
 }

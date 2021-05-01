@@ -7,6 +7,7 @@ export default function Sobre(){
   return(
     <>
     <section className={styles.sobre}>
+      <img src="bgSobre.svg" />
       <div className={styles.sobreWrapper}>
         <div className={styles.sobreContent}>
           <h2>Um pouco sobre a Dani</h2>
@@ -18,42 +19,43 @@ export default function Sobre(){
             onClick={() => setModalIsOpen(true)}>
             SAIBA MAIS
           </button>
-          <Modal
-            isOpen={modalIsOpen}
-            onRequestClose={() => setModalIsOpen(false)}
-            ariaHideApp={false}
-            style={
-              {
-                overlay:{
-                  backgroundColor: 'rgba(0, 0, 0, 0.6)'
-                },
-                content:{
-                  width: '400px',
-                  height: '560px',
-                  top: '50%',
-                  left: '50%',
-                  transform: 'translate(-50%, -50%)',
+          <div className={styles.modal}>
+            <Modal
+              isOpen={modalIsOpen}
+              onRequestClose={() => setModalIsOpen(false)}
+              ariaHideApp={false}
+              style={
+                {
+                  overlay:{
+                    backgroundColor: 'rgba(0, 0, 0, 0.6)'
+                  },
+                  content:{
+                    width: '300px',
+                    height: '410px',
+                    top: '50%',
+                    left: '50%',
+                    transform: 'translate(-50%, -50%)',
+                    paddingLeft: '1.5%',
+                    paddingRight: '1.5%',
+                    borderRadius: '5px'
+                  }
                 }
               }
-            }
-          >
-            <div className={styles.modalWrapper}>
-              <h2>Sobre a Dani</h2>
-              <p>
-                In aute exercitation quis et dolore in pariatur non ad officia. Eiusmod esse pariatur duis duis enim in ut. Cillum mollit consectetur pariatur in. Mollit labore veniam est pariatur laborum cupidatat eu ea ea fugiat quis. Qui magna deserunt mollit in exercitation labore labore qui elit qui cillum id. Enim cillum reprehenderit mollit non laboris dolore consequat eu deserunt incididunt consectetur id amet. Cupidatat Lorem ipsum non reprehenderit non tempor minim aute consectetur ut esse nulla.
-
-                Laborum eu esse ex irure est sunt voluptate eiusmod exercitation. Officia fugiat duis eu laborum officia do mollit consequat amet voluptate. Lorem culpa excepteur ullamco consectetur ad. Sunt magna qui anim est aute qui incididunt.
-
-                Occaecat voluptate minim proident irure magna excepteur dolore dolore cillum labore est. Sint pariatur qui aliqua nulla mollit elit esse dolore enim. Qui cupidatat irure voluptate reprehenderit fugiat est esse aute sint. Veniam laboris nulla amet qui Lorem ullamco cupidatat ex incididunt eu exercitation exercitation.
-              </p>
-              <button
-                onClick={() => setModalIsOpen(false)}
-                className={styles.btnFechar}
-              >
-                Fechar
-              </button>
-            </div>
-          </Modal>
+            >
+              <div className={styles.modalWrapper}>
+                <h2>Sobre a Dani</h2>
+                <p>
+                  In aute exercitation quis et dolore in pariatur non ad officia. Eiusmod esse pariatur duis duis enim in ut. Cillum mollit consectetur pariatur in. Mollit labore veniam est pariatur laborum cupidatat eu ea ea fugiat quis. Qui magna deserunt mollit in exercitation labore labore qui elit qui cillum id. Enim cillum reprehenderit mollit non laboris dolore consequat eu deserunt incididunt consectetur id amet. Cupidatat Lorem ipsum non reprehenderit non tempor minim aute consectetur ut esse nulla.
+                </p>
+                <button
+                  onClick={() => setModalIsOpen(false)}
+                  className={styles.btnFechar}
+                >
+                  Fechar
+                </button>
+              </div>
+            </Modal>
+          </div>
         </div>
         <div className={styles.cupcake}>
           <img src="cupcake.png" />
