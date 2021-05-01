@@ -3,6 +3,7 @@ import styles from '../styles/components/Footer.module.css'
 export default function Footer(){
   return(
     <footer className={styles.footer}>
+      <img src="bgFooter.svg" />
       <div className={styles.footerWrapper}>
         <div className={styles.footerContentLeft}>
           <p>Você pode nos encontrar no endereço:</p>
