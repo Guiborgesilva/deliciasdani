@@ -20,7 +20,6 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  position: relative;
 }
 
 .footerContentLeft,
@@ -43,18 +42,20 @@
 
 .footerContentLeft p:nth-of-type(2){
   margin-bottom: 0;
+  height: 2rem;
+  line-height: 2rem;
+}
+
+.footerContentCenter{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .footerContentCenter h2{
   font-family: 'GoodVibrations';
   font-size: 2.5rem;
-  width: 33.3%;
-  text-align: center;
   font-weight: normal;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
 }
 
 .footerContentRight{
@@ -101,8 +102,14 @@
 
   .footerWrapper{
     width: 100%;
-    margin-top: -15px;
+    margin-top: -10px;
     flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .footerContentLeft{
+    width: 100%;
+    align-items: center;
   }
 
   .footerContentLeft p{
@@ -110,12 +117,14 @@
     text-align: center;
   }
 
-  .footerContentCenter h2{
-    font-size: 2rem;
+  .footerContentCenter{
+    width: 100%;
+    align-items: center;
   }
 
   .footerContentRight{
-    margin-top: 100px;
+    width: 100%;
+    align-items: center;
   }
 
   .footerContentRight p{
@@ -128,10 +137,6 @@
     height: 1.5rem;
     margin-right: 5px;
     margin-top: 3px;
-  }
-
-  .footerContentCenter{
-    margin-top: -20px;
   }
 
   .footerContentCenter h2{
