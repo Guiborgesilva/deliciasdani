@@ -21,6 +21,7 @@ export default function Sobre(){
           <Modal
             isOpen={modalIsOpen}
             onRequestClose={() => setModalIsOpen(false)}
+            ariaHideApp={false}
             style={
               {
                 overlay:{
@@ -31,7 +32,7 @@ export default function Sobre(){
                   height: '560px',
                   top: '50%',
                   left: '50%',
-                  transform: 'translate(-50%, -50%)'
+                  transform: 'translate(-50%, -50%)',
                 }
               }
             }
