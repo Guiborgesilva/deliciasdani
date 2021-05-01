@@ -4,7 +4,6 @@ import Link from 'next/link'
 export default function Banner(){
   return(
     <section className={styles.banner}>
-      
       <div className={styles.chamadaBanner}>
         <h2>
           Pensando em <span>presentear</span> alguém <span>muito especial?</span>

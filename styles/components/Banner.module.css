@@ -7,7 +7,7 @@ section.banner{
   overflow: hidden;
   margin-top: -1px;
   position: relative;
-  background: url(../../public/banner.png) no-repeat;
+  background: url('../../public/bgBanner.png') no-repeat;
   background-position: center;
 }
 
