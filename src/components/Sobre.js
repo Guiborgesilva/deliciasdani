@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import Modal from 'react-modal'
-import styles from '../styles/components/Sobre.module.css'
+import styles from '../../styles/components/Sobre.module.css'
 
 export default function Sobre(){
   const [modalIsOpen, setModalIsOpen] = useState(false)

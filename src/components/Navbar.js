@@ -1,9 +1,9 @@
 import Link from 'next/link'
-import styles from '../styles/components/Navbar.module.css'
+import styles from '../../styles/components/Navbar.module.css'
 
 export default function Navbar(){
   return(
-    <header class={styles.header}>
+    <header className={styles.header}>
       <div className={styles.container}>
         <div className={styles.logo}>
           <Link href="/">

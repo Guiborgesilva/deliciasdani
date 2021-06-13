@@ -1,4 +1,4 @@
-import styles from '../styles/components/ProdutosDestaque.module.css'
+import styles from '../../styles/components/ProdutosDestaque.module.css'
 
 export default function ProduDesta(){
   return(
