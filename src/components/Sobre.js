@@ -6,7 +6,7 @@ export default function Sobre(){
   const [modalIsOpen, setModalIsOpen] = useState(false)
   return(
     <>
-    <section className={styles.sobre}>
+    <section id="sobre" className={styles.sobre}>
       <img src="bgSobre.svg" />
       <div className={styles.sobreWrapper}>
         <div className={styles.sobreContent}>

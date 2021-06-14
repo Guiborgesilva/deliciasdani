@@ -3,7 +3,7 @@ import styles from '../../styles/components/Navbar.module.css'
 
 export default function Navbar(){
   return(
-    <header className={styles.header}>
+    <header id="home" className={styles.header}>
       <div className={styles.container}>
         <div className={styles.logo}>
           <Link href="/">
@@ -20,7 +20,7 @@ export default function Navbar(){
               </Link>
             </li>
             <li>
-              <Link href="/">
+              <Link href="/#sobre">
                 <a>SOBRE</a>
               </Link>
             </li>
